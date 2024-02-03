@@ -6,3 +6,8 @@
     ansible.builtin.package:
       name: httpd
       state: present
+
+  - name: Start service httpd
+    ansible.builtin.service:
+      name: httpd
+      state: started
